@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.05em;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 5px;
+}
+
+.grid > div{
+    text-align: center;
+    background-color: crimson;
+    padding: 1em;
+}
+
+.grid .blue{
+    background-color: cyan;
+}
+
+.grid .yellow{
+    background-color: yellow;
+}
