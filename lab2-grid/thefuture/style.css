@@ -3,7 +3,6 @@
     font-family: sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 0.05em;
 }
 
 .grid{
@@ -11,10 +10,16 @@
     grid-gap: 5px;
 }
 
-.grid > div{
+.grid div{
     text-align: center;
     background-color: crimson;
     padding: 1em;
+    display: flex;
+}
+
+.grid div p{
+    align-items: center;
+    margin: auto;
 }
 
 .grid .blue{
@@ -23,4 +28,16 @@
 
 .grid .yellow{
     background-color: yellow;
+}
+
+@media(min-width: 300px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 50em){
+    .grid{
+        grid-template-columns: repeat(5, 1fr);
+    }
 }
