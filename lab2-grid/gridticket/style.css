@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Helvetica', sans-serif;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
 }
 
 body{
@@ -39,6 +39,7 @@ body{
 
 .header p{
     font-size: 0.7em;
+    letter-spacing: 0.3em;
 }
 
 .ticket .qrCode{
@@ -52,4 +53,47 @@ body{
 
 .ticket .frustration{
     display: none;
+}
+
+@media(min-width: 50em){
+    .ticket{
+        padding: 0.5em;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 2fr 1fr 40px;
+    }
+
+    .ticket .header{
+        background-color: transparent;
+        color: black;
+        flex-direction: column-reverse;
+        grid-column: 1/span 3;
+    }
+
+    .header h1{
+        font-size: 4em;
+        margin: 0;
+    }
+
+    .ticket .qrCode{
+        grid-column: 4/span 2;
+        grid-row: 1/span 3;
+        border: 1px solid black;
+    }
+
+    .ticketPrice{
+        grid-column: 3/span 1;
+    }
+    
+    .ticket .frustration{
+        display: flex;
+        grid-column: 1/span 3;
+    }
+
+    .ticket .frustration p{
+        align-items: center;
+        justify-self: center;
+        font-size: 0.8em;
+        letter-spacing: normal;
+    }
+
 }
