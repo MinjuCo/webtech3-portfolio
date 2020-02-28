@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+    letter-spacing: 0.3em;
+}
+
+body{
+    margin: 0;
+}
+
+.ticket{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 1fr;
+    background-image: url("bg-image.png");
+    background-color:  rgba(255, 255, 255, 0.8);
+    background-size: cover;
+    background-blend-mode: color;
+}
+
+.ticket div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.header{
+    grid-column: 1/span 2;
+    background-color: black;
+    color: white;
+}
+
+.header h1{
+    margin-bottom: 0;
+}
+
+.header p{
+    font-size: 0.7em;
+}
+
+.ticket .qrCode{
+    grid-column: 1/span 2;
+    border: none;
+}
+
+.ticketPrice{
+    grid-column: 1/span 2;
+}
+
+.ticket .frustration{
+    display: none;
+}
