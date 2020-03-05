@@ -12,6 +12,7 @@ class Note {
     newP.innerHTML = title;
 
     let newA = document.createElement('a');
+    newA.innerHTML = "Remove";
     newA.setAttribute("href","#");
     newA.setAttribute("card-remove");
 
@@ -26,6 +27,7 @@ class Note {
   add(){
     // HINT🤩
     // this function should append the note to the screen somehow
+    document.querySelector(".notes").appendChild(this.element);
   }
   
   saveToStorage(){
@@ -63,7 +65,7 @@ class App {
     // this function should create a new note by using the Note() class
   
     // HINT🤩
-    // note.add();
+    note.add();
     // note.saveToStorage();
     // this.reset();
   }
