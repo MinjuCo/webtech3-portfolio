@@ -5,7 +5,18 @@ class Note {
   }
   
   createElement(title){
-    let newNote = document.createElement('div');
+    let newNote = document.createElement('div'); //<div> element is being created
+    newNote.setAttribute("class", "card"); //set the class attribute of the div to card
+    
+    let newP = document.createElement('p'); //create a <p> element
+    newP.innerHTML = title;
+
+    let newA = document.createElement('a');
+    newA.setAttribute("href","#");
+    newA.setAttribute("card-remove");
+
+    newNote.appendChild(newP);
+    newNote.appendChild(newA);
     
     // HINT🤩 a.addEventListener('click', this.remove.bind(newNote));
     
@@ -50,7 +61,7 @@ class App {
    
   createNote(e){
     // this function should create a new note by using the Note() class
-    console.log("click");
+  
     // HINT🤩
     // note.add();
     // note.saveToStorage();
