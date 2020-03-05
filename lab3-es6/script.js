@@ -1,7 +1,7 @@
 class Note {
   constructor(title) {
     this.title = title;
-    // HINT🤩 this.element = this.createElement(title);
+    this.element = this.createElement(title);
   }
   
   createElement(title){
@@ -37,7 +37,8 @@ class App {
     // clicking the button should work
     // pressing the enter key should also work
     // this.btnAdd = ???
-    // this.btnAdd.addEventListener("click", this.createNote.bind(this));
+    this.btnAdd = document.querySelector("#btnAddNote");
+    this.btnAdd.addEventListener("click", this.createNote.bind(this));
     // this.loadNotesFromStorage();
   }
   
@@ -49,7 +50,7 @@ class App {
    
   createNote(e){
     // this function should create a new note by using the Note() class
-    
+    console.log("click");
     // HINT🤩
     // note.add();
     // note.saveToStorage();
