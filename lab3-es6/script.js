@@ -14,7 +14,7 @@ class Note {
     let newA = document.createElement('a');
     newA.innerHTML = "Remove";
     newA.setAttribute("href","#");
-    newA.setAttribute("card-remove");
+    newA.setAttribute("class","card-remove");
 
     newNote.appendChild(newP);
     newNote.appendChild(newA);
