@@ -28,6 +28,8 @@ class Note {
     // HINT🤩
     // this function should append the note to the screen somehow
     document.querySelector(".notes").appendChild(this.element);
+    this.element.classList.add("animated");
+    this.element.classList.add("fadeInDown");
   }
   
   saveToStorage(){
@@ -40,9 +42,9 @@ class Note {
     const savedNotes = getStorage != null? getStorage : [];
     savedNotes.push(this.title);
 
-    console.log(savedNotes);
+    console.log(`This is the array were notes are saved: $(savedNotes)`);
     localStorage.setItem('savedNotes', JSON.stringify(savedNotes));
-    console.log(localStorage);
+    console.log(`This is the current local storage: $(localStorage)`);
   }
   
   remove(){
@@ -81,10 +83,10 @@ class App {
     // something like note.add() in a loop would be nice
     const savedNotes = JSON.parse(localStorage.getItem('savedNotes'));
     if(savedNotes != null){
-      for(let title of savedNotes){
+      savedNotes.forEach(title => {
         let note = new Note(title);
         note.add();
-      }
+      });
     }
   }
    
