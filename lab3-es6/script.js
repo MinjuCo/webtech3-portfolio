@@ -34,12 +34,15 @@ class Note {
     // HINT🤩
     // localStorage only supports strings, not arrays
     // if you want to store arrays, look at JSON.parse and JSON.stringify
-    let savedNotes;
+    
+    let getStorage = JSON.parse(localStorage.getItem('savedNotes'));
     //Shorthand if structure
-    savedNotes = savedNotes != null? JSON.parse(localStorage.getItem('savedNotes')) : [];
+    const savedNotes = getStorage != null? getStorage : [];
     savedNotes.push(this.title);
 
     console.log(savedNotes);
+    localStorage.setItem('savedNotes', JSON.stringify(savedNotes));
+    console.log(localStorage);
   }
   
   remove(){
