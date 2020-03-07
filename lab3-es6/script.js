@@ -48,8 +48,18 @@ class Note {
   remove(){
     // HINT🤩 the meaning of 'this' was set by bind() in the createElement function
     // in this function, 'this' will refer to the current note element
+    let title = this.querySelector('p').innerHTML;
+    console.log(title);
+    this.removeFromStorage(title);
     this.remove();
-  } 
+  }
+  
+  removeFromStorage(title){
+    const savedNotes = JSON.parse(localStorage.getItem('savedNotes'));
+    savedNotes.splice(savedNotes.indexOf(title),1);
+    localStorage.setItem('savedNotes', savedNotes);
+    console.log(localStorage);
+  }
 }
 
 class App {
@@ -62,13 +72,18 @@ class App {
     // this.btnAdd = ???
     this.btnAdd = document.querySelector("#btnAddNote");
     this.btnAdd.addEventListener("click", this.createNote.bind(this));
-    // this.loadNotesFromStorage();
+    this.loadNotesFromStorage();
   }
   
   loadNotesFromStorage() {
     // HINT🤩
     // load all notes from storage here and add them to the screen
     // something like note.add() in a loop would be nice
+    const savedNotes = JSON.parse(localStorage.getItem('savedNotes'));
+    for(let title of savedNotes){
+      let note = new Note(title);
+      note.add();
+    }
   }
    
   createNote(e){
