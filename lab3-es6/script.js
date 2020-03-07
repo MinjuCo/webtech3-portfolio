@@ -72,8 +72,10 @@ class App {
   }
   
   reset(){
-    // this function should reset the form
-    document.querySelector("#txtAddNote").value = ""; 
+    // this function should reset the form and give focus to the input field
+    let inputField = document.querySelector("#txtAddNote");
+    inputField.value = "";
+    inputField.focus();
   }
   
 }
