@@ -68,11 +68,12 @@ class App {
     // HINT🤩
     note.add();
     // note.saveToStorage();
-    // this.reset();
+    this.reset();
   }
   
   reset(){
-    // this function should reset the form 
+    // this function should reset the form
+    document.querySelector("#txtAddNote").value = ""; 
   }
   
 }
