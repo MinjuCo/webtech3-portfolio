@@ -20,3 +20,7 @@ Screenshot bewijs van werk CSS Grid Garden
 
 ### thefuture
 [Open in codepen](https://codepen.io/minju_98/pen/xxGdbwo)
+
+## Week 3 - ES6
+Test the note app 📝
+[Open it in codepen](https://codepen.io/minju_98/pen/LYVOBxR)
