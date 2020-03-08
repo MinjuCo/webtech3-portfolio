@@ -1,0 +1,16 @@
+{
+  "name": "lab3-es6",
+  "version": "1.0.0",
+  "description": "Note app",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel source/script.js -d lib"
+  },
+  "author": "Madina Jurakholova",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7"
+  }
+}
