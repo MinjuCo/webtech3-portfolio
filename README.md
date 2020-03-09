@@ -23,4 +23,4 @@ Screenshot bewijs van werk CSS Grid Garden
 
 ## Week 3 - ES6
 Test the note app 📝
-[Open it in codepen](https://codepen.io/minju_98/pen/LYVOBxR)
+[Open it in codepen](https://codepen.io/minju_98/pen/xxGpXwJ)
