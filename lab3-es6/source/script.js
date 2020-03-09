@@ -75,6 +75,15 @@ class App {
     this.btnAdd = document.querySelector("#btnAddNote");
     this.btnAdd.addEventListener("click", this.createNote.bind(this));
     this.loadNotesFromStorage();
+    this.txtAddNote = document.querySelector("#txtAddNote");
+    
+    //https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+    this.txtAddNote.onkeypress = (e) => {
+      if(e.keyCode == 13 || e.which == 13){
+        e.preventDefault();
+        this.btnAdd.click();
+      }
+    }
   }
   
   loadNotesFromStorage() {
@@ -93,6 +102,7 @@ class App {
   createNote(e){
     // this function should create a new note by using the Note() class
     let text = document.querySelector("#txtAddNote").value;
+    console.log(text);
     let note = new Note(text);
     // HINT🤩
     note.add();
