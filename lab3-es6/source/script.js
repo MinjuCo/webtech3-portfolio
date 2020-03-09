@@ -42,9 +42,9 @@ class Note {
     const savedNotes = getStorage != null? getStorage : [];
     savedNotes.push(this.title);
 
-    console.log(`This is the array were notes are saved: $(savedNotes)`);
+    console.log(`This is the array were notes are saved: ${savedNotes}`);
     localStorage.setItem('savedNotes', JSON.stringify(savedNotes));
-    console.log(`This is the current local storage: $(localStorage)`);
+    console.log(`This is the current local storage: ${localStorage}`);
   }
   
   remove(){
