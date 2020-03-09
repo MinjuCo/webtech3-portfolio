@@ -52,9 +52,9 @@ var Note = /*#__PURE__*/function () {
 
       var savedNotes = getStorage != null ? getStorage : [];
       savedNotes.push(this.title);
-      console.log("This is the array were notes are saved: $(savedNotes)");
+      console.log("This is the array were notes are saved: ".concat(savedNotes));
       localStorage.setItem('savedNotes', JSON.stringify(savedNotes));
-      console.log("This is the current local storage: $(localStorage)");
+      console.log("This is the current local storage: ".concat(localStorage));
     }
   }, {
     key: "remove",
@@ -82,6 +82,8 @@ var Note = /*#__PURE__*/function () {
 
 var App = /*#__PURE__*/function () {
   function App() {
+    var _this2 = this;
+
     _classCallCheck(this, App);
 
     console.log("👊🏼 The Constructor!"); // HINT🤩
@@ -92,6 +94,15 @@ var App = /*#__PURE__*/function () {
     this.btnAdd = document.querySelector("#btnAddNote");
     this.btnAdd.addEventListener("click", this.createNote.bind(this));
     this.loadNotesFromStorage();
+    this.txtAddNote = document.querySelector("#txtAddNote"); //https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+
+    this.txtAddNote.onkeypress = function (e) {
+      if (e.keyCode == 13 || e.which == 13) {
+        e.preventDefault();
+
+        _this2.btnAdd.click();
+      }
+    };
   }
 
   _createClass(App, [{
@@ -114,6 +125,7 @@ var App = /*#__PURE__*/function () {
     value: function createNote(e) {
       // this function should create a new note by using the Note() class
       var text = document.querySelector("#txtAddNote").value;
+      console.log(text);
       var note = new Note(text); // HINT🤩
 
       note.add();
