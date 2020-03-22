@@ -31,3 +31,8 @@ Test the note app 📝
 ![Screenshot m001 certificate](https://github.com/MinjuCo/webtech3-portfolio/blob/master/lab12-mongodb/mj_mongodb_certificate.JPG "MongoDB M001 completion certificate")
 
 [Link to pdf document](https://github.com/MinjuCo/webtech3-portfolio/blob/master/lab12-mongodb/M001-Course-Completion-Confirmation.pdf)
+
+## Week 5 - NodeJS
+[Link to codepen](https://codepen.io/minju_98/pen/rNVZMjv)
+
+[Link to api repository 👾](https://github.com/MinjuCo/lab5_nodejs_basics)
