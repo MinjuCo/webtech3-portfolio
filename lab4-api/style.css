@@ -1,0 +1,44 @@
+#weatherAd{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
+    width: 300px;
+    height: 600px;
+    background-image: url("https://static.makeuseof.com/wp-content/uploads/2017/03/spotify-myths-670x335.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fcfcfc;
+    font-family: sans-serif;
+}
+
+.weatherInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.icon{
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+}
+
+.place{
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.temp{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 4em;
+}
+
+.summary{
+    margin-bottom: 1.5em;
+}
