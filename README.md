@@ -32,6 +32,11 @@ Test the note app 📝
 
 [Link to pdf document](https://github.com/MinjuCo/webtech3-portfolio/blob/master/lab12-mongodb/M001-Course-Completion-Confirmation.pdf)
 
+## Week 4 - API
+[Checkout the API](https://codepen.io/minju_98/pen/ZEGVLxg)
+
+![Screenshot Weather API](https://github.com/MinjuCo/webtech3-portfolio/blob/master/lab4-api/weatherApi.JPG "Weather Api for Spotify")
+
 ## Week 5 - NodeJS
 [Link to codepen](https://codepen.io/minju_98/pen/rNVZMjv)
 
