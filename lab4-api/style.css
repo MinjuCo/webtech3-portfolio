@@ -15,7 +15,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
@@ -36,4 +35,23 @@
 
 .summary{
     margin-bottom: 2em;
+}
+
+#spotify{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.activity{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.songPic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
