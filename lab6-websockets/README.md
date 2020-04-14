@@ -4,6 +4,6 @@
 
 [Open Corona Stats Dashboard 🦠](https://coronastats-mj.herokuapp.com/stats/)
 
-[Update stats 👾](https://coronastats-mj.herokuapp.com/stats/)
+[Update stats 👾](https://coronastats-mj.herokuapp.com/stats/updatestats)
 
 ![App live update stats](https://github.com/MinjuCo/webtech3-portfolio/blob/master/lab6-websockets/live-app.gif)
